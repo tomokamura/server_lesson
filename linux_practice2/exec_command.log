@@ -1,0 +1,164 @@
+    1  sudo yum -y groupinstall "development tools"
+    2  sudo yum -y install epel-release wget
+    3  sudo wget http://rpms.famillecollet.com/enterprise/remi-release-7.rpm
+    4  sudo rpm -Uvh remi-release-7.rpm
+    5  sudo yum -y install --enablerepo=remi-php71 php php-pdo php-mysqlnd php-mbstring php-xml php-fpm php-common php-devel php-mysql unzip
+    6  php -v
+    7  php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
+    8  php composer-setup.php
+    9  php -r "unlink('composer-setup.php');"
+   10  sudo mv composer.phar /usr/local/bin/composer
+   11  composer -v
+   12  ls 
+   13  ls
+   14  ls ls /
+   15  ls /user
+   16  ls /usr
+   17  pwd
+   18  cd /vagrant
+   19  pwd
+   20  cd usr
+   21  cd /usr
+   22  cd /vagrant
+   23  ls
+   24  /ls
+   25  / ls
+   26  ls /
+   27  ls / -a
+   28  ls / -l
+   29  cd usr
+   30  cd /user
+   31  cd \usr
+   32  cd /usr
+   33  cd ~
+   34  cd /
+   35  cd \
+   36  cd /
+   37  cd -
+   38  cd ^
+   39  cd -
+   40  pwd
+   41  .
+   42  cd .
+   43  cd usr
+   44  pwd
+   45  cd ../../
+   46  pwd
+   47  cd -
+   48  pwd
+   49  cd /vagrant
+   50  mkdir server_lesson && cd server_lesson
+   51  git init
+   52  touch first.txt
+   53  cd /vagrant
+   54   mkdir server_lesson/linux_practice/public
+   55  mkdir -p server_lesson/linux_practice/public
+   56   ls server_lesson server_lesson/linux_practice
+   57  touch server_lesson/linux_practice/public/index.php
+   58  ls server_lesson/linux_practice/public
+   59  cd /vagrant/server_lesson && ls
+   60  cd /vagrant/server_lesson/linux_practice/public
+   61  cp index.php index_bk.php
+   62  ls
+   63  cd /vagrant/server_lesson/linux_practice
+   64  cp -r public tmp
+   65  ls ./ public tmp
+   66  cd /vagrant
+   67  mv server_lesson/linux_practice server_lesson/linux_practice1
+   68  mkdir linux_practice2 linux_practice3
+   69  mv ./linux_practice2 ./server_lesson
+   70  /vagrant/server_lesson/linux_practice1/tmp/
+   71  cd /vagrant/server_lesson/linux_practice1/tmp/
+   72  rm *_bk.php
+   73  ls
+   74  cd /vagrant
+   75  rm server_lesson/first.txt
+   76  rm -r linux_practice3
+   77  ls server_lesson
+   78  cd /vagrant/server_lesson
+   79  echo '# サーバレッスン' > README.md
+   80  'Linuxプラクティス' >> README.md
+   81  echo 'Linuxプラクティス' >> README.md
+   82  echo '-----------------' >> README.md
+   83  cat README.md
+   84  cd /
+   85  cd ~
+   86  ls
+   87  ls /
+   88  cd vagrant
+   89  cd /vagrant
+   90  ls
+   91  cd ..
+   92  cd ../../
+   93  cd ../
+   94  ;s
+   95  ls
+   96  cd /vagrant
+   97  cd server_lesson/
+   98  ls
+   99  git branch
+  100  git status
+  101  git add .
+  102  git commit -m "first commit"
+  103  git status
+  104  git log
+  105  cd /vagrant/server_lesson
+  106  vi README.md
+  107  ls
+  108  cd linux_practice1
+  109  ls
+  110  cd public
+  111  ls
+  112  cd../../
+  113  cd ../
+  114  cd ..
+  115  cd linux_practice2
+  116  ls
+  117  cd ../
+  118  vi README.md
+  119  git add .
+  120  git commit -m "READMEに学習したLinuxコマンドを記載"
+  121  git log
+  122  git status
+  123  git remote add origin https://github.com/tomokamura/server_lesson.git
+  124  git remote -v
+  125  git push origin master
+  126  vi README.md
+  127  git add .
+  128  git commit -m "READMEのマークダウン記法を修正"
+  129  git push origin master
+  130  cd linux_practice2
+  131  mkdir documents
+  132  ls
+  133  cd documents/
+  134  ls
+  135  touch gizumo{01..50}.md
+  136  ls
+  137  cd ../
+  138  mkdir trash
+  139  mv gizumo{20..40}.md  linux_practice2/trash
+  140  ls
+  141  mv gizumo{20..40}.md  linux_practice2/trash/
+  142  mv gizumo{20..40}.md  ./linux_practice2/trash
+  143  mv gizumo{20..40}.md  trash
+  144  ls
+  145  cd documents/
+  146  ls
+  147  mv gizumo{20..40}.md  trash
+  148  mv gizumo{20..40}.md  ./trash
+  149  mv gizumo{20..40}.md  trash/
+  150  pwd
+  151  mv ./gizumo{20..40}.md  ../trash
+  152  ls
+  153  cd ../trach
+  154  cd ../trash
+  155  ls
+  156  cd ../
+  157  touch .gitignore
+  158  ls
+  159  vi .gitignore
+  160  ls -a
+  161  vi .gitignore
+  162  history -300
+  163  history 300
+  164  history 300 > exec_command.log
